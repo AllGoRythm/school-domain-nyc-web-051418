@@ -21,7 +21,7 @@ class School
 
   def sort
     collect = {}
-    roster.each do |grade, name|
+    roster.map do |grade, name|
       collect[grade] = name.sort
     end
     collect
